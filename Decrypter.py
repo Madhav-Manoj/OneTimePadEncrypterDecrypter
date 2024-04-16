@@ -23,7 +23,7 @@ def decrypter(m, otp):
         else:
             dm += char
     return dm
-f=open("messagefile.txt","r")
+f=open("messagefile.txt","r")##reads txt from msg file
 m = str(f.readlines())
 ml = len(m)
 otp = otpkeygen(ml)
